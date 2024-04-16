@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Test.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <form action="#">
+        <h2>Login</h2>
+        <div class="error-message" id="error-message"></div>
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+        <input type="submit" value="Login">
+    </form>
+
+    <div class="logo-container">
+        <img src="VCCFCLOGO.png" alt="Logo" class="logo-image">
+        <span class="logo-text">VCCF Calamba</span>
+    </div>
+
+    <script>
+        document.querySelector("form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            // You can add your login authentication logic here
+            if (username === "admin" && password === "admin") {
+                alert("Login successful!");
+                // Redirect to another page or perform other actions after successful login
+            } else {
+                document.getElementById("error-message").textContent = "Invalid username or password.";
+            }
+        });
+    </script>
+</body>
+</html>
