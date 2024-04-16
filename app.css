@@ -41,21 +41,3 @@ input[type="submit"]:hover {
     color: red;
     font-size: 14px;
 }
-.logo-container {
-    display: flex;
-    align-items: center;
-}
-
-/* Logo image */
-.logo-image {
-    width: 100px; /* Adjust the width as needed */
-    height: auto; /* Maintain aspect ratio */
-}
-
-/* Logo text */
-.logo-text {
-    font-size: 24px;
-    font-weight: bold;
-    color: #333; /* Adjust the color as needed */
-    margin-left: 10px; /* Add spacing between logo image and text */
-}
